@@ -1,4 +1,11 @@
 /* Existing styles */
+header {
+background-color:  rgb(194, 180, 159);
+color: black;
+padding: auto;
+font-size: 15px;
+}
+
 body {
     background-color: rgb(244, 234, 219);
 }
@@ -47,3 +54,10 @@ img {
 .top-right-links a:hover {
     background-color: rgb(249, 239, 230);
 }
+
+footer {
+    background-color:  rgb(194, 180, 159);
+    color: black;
+    padding: auto;
+    font-size: 15px;
+    }
