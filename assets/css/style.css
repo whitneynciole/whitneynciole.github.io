@@ -5,8 +5,10 @@ body {
 
 h1 {
     color: black;
-    text-align: center;
-}
+    text-align: left;
+    font-size: 25px; 
+    font-weight: normal;
+  }
 
 p {
     font-family: verdana;

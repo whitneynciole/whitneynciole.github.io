@@ -1,17 +1,16 @@
----
-layout: default
-title: About
----
 
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <link rel="stylesheet" href="{{ '/assets/css/about.css' | relative_url }}"> 
-  <title>About</title>
+  <title>about</title>
 </head>
 <body>
+
+  {% include header.html %}
+
   <br>
-  <h1>About</h1>
+  <h>about</h>
   <div class="top-right-links">
     <a href="/index.html">Home</a>
     <a href="/about.html">About</a>
@@ -24,5 +23,8 @@ title: About
   <img src="{{ '/assets/images/A280570-R1-27-28.JPG' | relative_url }}" alt="Photo of a woman" style="width:400px;height:280px;"> 
   </br> 
   <p>Oh, hey. You found my little corner of the internet. </br> It's just a collection of things—thoughts, bits of nonsense,</br> maybe something nice. No big mission, just a place to put stuff. </br> Feel free to wander but don't be weird about it.</p> 
+
+  {% include footer.html %}
+
 </body>
 </html>
