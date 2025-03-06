@@ -32,6 +32,7 @@ body {
     scrollbar-color: rgb(76, 51, 31);
     display: block; /* Remove flex centering */
     overflow: auto; /* Ensure scrolling works properly */
+    overflow-y: scroll;
 
 }
 fieldset::-webkit-scrollbar {

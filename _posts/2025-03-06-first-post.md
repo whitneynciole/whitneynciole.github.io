@@ -1,12 +1,11 @@
 ---
 layout: post
-title: "new beginnings"
+title: "A cup of coffee"
 date: 2025-03-06
 author: "whitney"
-excerpt: "This is the first post I have made here. "
+excerpt: "A cup of coffee"
 featured_image: "/assets/images/IMG_5876_VSCO.jpeg"
 ---
-
-A cup of coffee. 
+sunday, march 2
 
 ![coffee cup](/assets/images/IMG_5876_VSCO.jpeg){: style="width: 500px; height: auto;" }

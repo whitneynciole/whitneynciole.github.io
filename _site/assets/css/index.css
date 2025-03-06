@@ -1,0 +1,116 @@
+/* posts.css */
+
+
+  /* General body styles */
+  body {
+    background-color: rgb(244, 234, 219);
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Heading styles */
+  h1 {
+    color: rgb(76, 51, 31);
+    text-align: left;
+    font-size: 25px; 
+    font-weight: normal;
+  }
+  h3{
+    color: rgb(76, 51, 31);
+  }
+  /* Paragraph styles */
+  p {
+    font-family: verdana, sans-serif;
+    font-size: 10px;
+    text-align: left;
+  }
+  
+  /* Positioning the container in the top right corner */
+  .top-right-links {
+    position: auto;
+    top: 10px;
+    left: 10px;
+    font-size: 16px;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+  }
+  
+  /* Styling for individual links */
+  .top-right-links a {
+    text-decoration: none;
+    color: rgb(76, 51, 31);
+    text-align: center;
+    background-color: #fff;
+    padding: 5px 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    font-weight: bold;
+  }
+  
+  .top-right-links a:hover {
+    background-color: rgb(249, 239, 230);
+  }
+
+.post {
+    background-color: #fff;
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .post h2 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  .post p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #666;
+  }
+  
+  .post img {
+    width: 100%;
+    max-width: 600px;
+    border-radius: 8px;
+    margin: 20px 0;
+  }
+  
+  /* Optional: Add some hover effects for the post */
+  .post:hover {
+    background-color: #f9f9f9;
+  }
+  
+  .post a {
+    color: rgb(76, 51, 31);
+    text-decoration: none;
+  }
+  
+  .post a:hover {
+    color: rgb(249, 239, 230);
+    text-decoration: underline;
+  }
+
+  /* Image grid styles */
+.image-grid {
+  display: grid;
+  grid-template-columns: 1fr; /* Only 1 image per row */
+  gap: 0; /* No space between images */
+  width: 15%; /* Takes up 15% of the page width */
+  position: fixed; /* Fixes the image grid on the right side */
+  top: 0; /* Align to the top of the page */
+  right: 0; /* Align to the right side of the page */
+  padding: 0; /* Remove any internal padding */
+  margin: 0; /* Remove any margin */
+  box-sizing: border-box; /* Ensures borders are included in the size */
+}
+
+/* Ensure images fit inside the grid */
+.image-grid img {
+  width: 100%; /* Make images fill the available width */
+  height: auto; /* Maintain aspect ratio */
+  object-fit: cover; /* Ensures images cover the area without distortion */
+  display: block; /* Removes space below images */
+}

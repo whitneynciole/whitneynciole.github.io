@@ -92,10 +92,10 @@
   }
   .image-grid {
     display: grid;
-    grid-template-columns: repeat(2, 1fr); /* 2 images per row */
+    grid-template-columns: repeat(4, 1fr); /* 2 images per row */
     gap: 10px; /* Space between images */
-    max-width: 600px; /* Adjust this to control the total width */
-    margin: auto; /* Center the grid */
+    max-width: 1200px; /* Adjust this to control the total width */
+    margin: left; /* Center the grid */
 }
 
 .image-grid img {
