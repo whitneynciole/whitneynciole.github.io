@@ -1,0 +1,6 @@
+title: Whitney's Website
+baseurl: ""  # leave empty if it's deployed to the root of your domain or adjust to a subfolder if needed
+url: "https://whitneynciole.github.io"  # or your own URL
+
+markdown: kramdown
+

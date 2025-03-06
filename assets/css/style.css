@@ -1,0 +1,47 @@
+/* Existing styles */
+body {
+    background-color: rgb(244, 234, 219);
+}
+
+h1 {
+    color: black;
+    text-align: center;
+}
+
+p {
+    font-family: verdana;
+    font-size: 10px;
+    text-align: center; /* changed float: center to text-align: center */
+}
+
+img {
+    float: left;
+    padding: 15px;
+}
+
+/* Position the container in the top right corner */
+.top-right-links {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    font-size: 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+/* Style for individual links */
+.top-right-links a {
+    text-decoration: none;
+    color: rgb(76, 51, 31);
+    text-align: center;
+    background-color: #fff;
+    padding: 5px 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    font-weight: bold;
+}
+
+.top-right-links a:hover {
+    background-color: rgb(249, 239, 230);
+}

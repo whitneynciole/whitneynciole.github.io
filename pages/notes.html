@@ -1,0 +1,35 @@
+---
+layout: default
+title: Notes
+---
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="../assets/css/style.css">
+  <title>notes</title>
+</head>
+<body>
+  <div class="top-right-links">
+    <a href="{{ '/index.html' | relative_url }}">Home</a>
+    <a href="{{ '/pages/about.html' | relative_url }}">About</a>
+    <a href="{{ '/pages/notes.html' | relative_url }}">Notes</a>
+    <a href="{{ '/pages/read.html' | relative_url }}">Read</a>
+    <a href="{{ '/pages/photos.html' | relative_url }}">Photos</a>
+  </div>
+
+  <h1>notes</h1>
+  <div class="posts">
+    {% for post in site.posts %}
+      <div class="post">
+        <h2><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h2>
+        
+        <!-- Display the excerpt of the post -->
+        <p>{{ post.excerpt | strip_html }}</p>
+
+        <a href="{{ post.url | relative_url }}">Read more...</a>
+      </div>
+    {% endfor %}
+  </div>
+</body>
+</html>
+
