@@ -1,8 +1,8 @@
 ---
 layout: default
-title: Home
+title: home
 ---
-<h1>Main Page</h1>
+<h1>home</h1>
 
 <div class="top-right-links">
   <a href="{{ site.baseurl }}/index.html">Home</a>
@@ -12,4 +12,4 @@ title: Home
   <a href="{{ site.baseurl }}/photos.html">Photos</a>
 </div>  
 
-<p>This is the main page for the website.</p>
+<p></p>
