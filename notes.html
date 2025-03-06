@@ -1,11 +1,11 @@
 ---
 layout: default
-title: Notes
+title: notes
 ---
 <!DOCTYPE html>
 <html>
 <head>
-  <link rel="stylesheet" href="/assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/notes.css">
   <title>notes</title>
 </head>
 <body>
@@ -26,15 +26,20 @@ title: Notes
   <div class="posts">
     {% for post in site.posts %}
       <div class="post">
-        <h2><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h2>
+        <!-- Display the featured image for the post -->
+        {% if post.featured_image %}
+          <img src="{{ post.featured_image }}" alt="{{ post.title }} preview image" class="post-preview-image">
+        {% endif %}
         
-        <!-- Display the excerpt of the post -->
+        <h2><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h2>
         <p>{{ post.excerpt | strip_html }}</p>
-
-        <a href="{{ post.url | relative_url }}">Read more...</a>
+        <a href="{{ post.url | relative_url }}" class="read-more">Read more...</a>
       </div>
     {% endfor %}
   </div>
+  
+  
+  
 </body>
 </html>
 

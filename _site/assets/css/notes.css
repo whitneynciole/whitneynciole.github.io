@@ -1,0 +1,108 @@
+/* General body styles */
+body {
+    background-color: rgb(244, 234, 219);
+    font-family: Arial, sans-serif;
+}
+
+/* Heading styles */
+h1 {
+    color: black;
+    text-align: left;
+    font-size: 25px; 
+    font-weight: normal;
+}
+
+/* Paragraph styles */
+p {
+    font-family: verdana, sans-serif;
+    font-size: 10px;
+    text-align: left;
+}
+
+/* Positioning the container in the top right corner */
+.top-right-links {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    font-size: 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+/* Styling for individual links */
+.top-right-links a {
+    text-decoration: none;
+    color: rgb(76, 51, 31);
+    text-align: center;
+    background-color: #fff;
+    padding: 5px 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    font-weight: bold;
+}
+
+.top-right-links a:hover {
+    background-color: rgb(249, 239, 230);
+}
+
+/* Style for individual post boxes */
+.posts {
+    display: flex;
+    flex-direction: column; /* Stack posts vertically */
+    gap: 20px;
+    padding: 10px;
+}
+
+/* Individual post box style */
+.posts .post {
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border: 1px solid rgb(230, 230, 230);
+    max-width: 400px;
+    margin: left; /* Center the post */
+}
+
+/* Post title link styles */
+.posts .post h2 a {
+    font-size: 20px;  /* Title size */
+    color: rgb(76, 51, 31);
+    text-decoration: none;
+}
+
+.posts .post h2 a:hover {
+    color:  rgb(38, 25, 15);
+    text-decoration: underline;
+}
+
+/* Post excerpt styles */
+.posts .post p {
+    font-size: 14px;
+    color: rgb(50, 50, 50);
+    line-height: 1.5;
+}
+
+/* "Read more" link styles */
+.posts .post a.read-more {
+    font-size: 12px;  /* Smaller "Read more" link */
+    color: rgb(38, 25, 15);
+    text-decoration: none;
+}
+
+.posts .post a.read-more:hover {
+    color: rgb(249, 239, 230);
+    text-decoration: underline;
+}
+
+/* Style for the preview image */
+.post-preview-image {
+    width: 40%;            /* Makes the image responsive */
+    max-width: 150x;     /* Optional: Limit the max width of the preview image */
+    height: 150px;          /* Set a fixed height to make it square */
+    object-fit: cover;      /* Ensures the image covers the entire square area without stretching */
+    border-radius: 8px;     /* Optional: round the corners */
+    margin-bottom: 0px;    /* Optional: space below the image */
+  }
+  

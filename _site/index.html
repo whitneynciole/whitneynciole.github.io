@@ -4,33 +4,48 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>{{ page.title | escape }}</title>
+  <title>home</title>
   
   <!-- Link to Global CSS (applies to all pages) -->
-  <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
+  <link rel="stylesheet" href="/assets/css/style.css">
 
   <!-- Optionally add page-specific CSS for specific pages like the Home page -->
-  {% if page.title == "Home" %}
-    <link rel="stylesheet" href="{{ '/assets/css/home.css' | relative_url }}">
-  {% endif %}
+  
   
   <!-- Link to the posts.css if the layout is "post" (for blog posts) -->
-  {% if page.layout == "post" %}
-    <link rel="stylesheet" href="{{ '/assets/css/posts.css' | relative_url }}">
-  {% endif %}
+  
   
 </head>
 <body>
   <!-- Include the header from the _includes folder -->
-  {% include header.html %}
+  <!-- _includes/header.html -->
+<header>
+   <p>whitneys website </p>
+  </header>
+  
   
   <div class="content">
     <main>
-      {{ content }}  <!-- This will render the content of the page (from index.md, about.html, etc.) -->
+      <h1>home</h1>
+
+<div class="top-right-links">
+  <a href="/index.html">Home</a>
+  <a href="/about.html">About</a>
+  <a href="/notes.html">Notes</a>
+  <a href="/read.html">Read</a>
+  <a href="/photos.html">Photos</a>
+</div>
+
+<p></p>
+  <!-- This will render the content of the page (from index.md, about.html, etc.) -->
     </main>
   </div>
 
   <!-- Include the footer from the _includes folder -->
-  {% include footer.html %}
+  <!-- _includes/footer.html -->
+<footer>
+    <p>&copy; 2025 whitneynciole</p>
+  </footer>
+  
 </body>
 </html>
