@@ -48,7 +48,7 @@
   .top-right-links a:hover {
     background-color: rgb(249, 239, 230);
   }
-  
+
 .post {
     background-color: #fff;
     padding: 20px;
@@ -90,3 +90,18 @@
     color: rgb(249, 239, 230);
     text-decoration: underline;
   }
+
+  .image-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4 equal columns */
+    gap: 10px; /* Adjust spacing between images */
+    margin: 20px 0; /* Add some space above and below */
+  }
+  
+  .image-grid img {
+    width: 100%;  /* Makes sure images scale properly */
+    height: 200px; /* Adjust this as needed */
+    object-fit: cover; /* Crops images to maintain aspect ratio */
+    border-radius: 8px; /* Optional: rounds corners */
+  }
+  

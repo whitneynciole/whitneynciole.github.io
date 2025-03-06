@@ -1,9 +1,16 @@
 ---
 layout: post
-title: "something new"
+title: "film pt.1"
 date: 2025-03-06
 author: "whitney"
-excerpt: "another one"
+excerpt: "film makes me more patient"
+featured_image: "/assets/images/000002290025.jpeg"
 ---
 
-html is harder when youre not using a template
+throw back to the summer 
+<div class="image-grid">
+<img src="/assets/images/000002290025.jpeg"alt="Image 1">
+<img src="/assets/images/000002290032.jpeg"alt="Image 2">
+<img src="/assets/images/000002290005.jpeg"alt="Image 3">
+<img src="/assets/images/000002290004.jpeg"alt="Image 4">
+</div>
