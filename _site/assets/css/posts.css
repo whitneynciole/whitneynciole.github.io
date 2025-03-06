@@ -9,9 +9,16 @@
   
   /* Heading styles */
   h1 {
-    color: black;
+    color: rgb(76, 51, 31);
     text-align: left;
     font-size: 25px; 
+    font-weight: normal;
+  }
+  /* Heading styles */
+  h2 {
+    color: black;
+    text-align: left;
+    font-size: 18px; 
     font-weight: normal;
   }
   
@@ -102,4 +109,15 @@
     width: 100%; /* Make images fill their grid cells */
     height: auto; /* Maintain aspect ratio */
     object-fit: cover; /* Crop images if needed */
+}
+
+.small-list {
+  font-size: 14px; /* Makes the list smaller */
+  line-height: 1.2; /* Adjusts the space between lines */
+}
+blockquote {
+  font-size: 14px;  /* Makes the quote text smaller or larger */
+  line-height: 1.5;  /* Adjusts the space between lines in the quote */
+  font-style: italic;
+  text-align: left;
 }

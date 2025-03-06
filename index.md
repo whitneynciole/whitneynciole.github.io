@@ -11,10 +11,13 @@ title: home
   <a href="{{ site.baseurl }}/photos.html">Photos</a>
 </div>
 
-Oh, hey. You found my little corner of the internet.  
-It's just a collection of things—thoughts, bits of nonsense,  
-maybe something nice. No big mission, just a place to put stuff.  
-Feel free to wander but don't be weird about it.
+  <p>
+  <br>
+  <br>
+  <br>Oh, hey. You found my little corner of the internet. <br>
+It's just a collection of things—thoughts, bits of nonsense, <br>
+maybe something nice. No big mission, just a place to put stuff. <br>
+Feel free to wander but don't be weird about it.</p>
 
 <div class="image-grid">
   <img src="{{ site.baseurl }}/assets/images/mainpage/IMG_5597_VSCO.jpeg" alt="Image 1">
