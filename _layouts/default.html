@@ -17,11 +17,17 @@
 </head>
 <body>
   <header>
-    <p>header</p>  <!-- Consider replacing with real header content -->
+    <div class="top-right-links">
+      <a href="{{ site.baseurl | relative_url }}/index.html">Home</a>
+      <a href="{{ site.baseurl | relative_url }}/about.html">About</a>
+      <a href="{{ site.baseurl | relative_url }}/notes.html">Notes</a>
+      <a href="{{ site.baseurl | relative_url }}/read.html">Read</a>
+      <a href="{{ site.baseurl | relative_url }}/photos.html">Photos</a>
+    </div>
   </header>
 
   <main>
-    {{ content }}  <!-- This will render the content of the page (from index.md) -->
+    {{ content }}  <!-- This will render the content of the page (from index.md, about.html, etc.) -->
   </main>
 
   <footer>
