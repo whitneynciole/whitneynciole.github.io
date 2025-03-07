@@ -41,6 +41,5 @@ featured_image: "/assets/images/IMG_5876_VSCO.jpeg"
 <img src="{{ 'assets/images/post1/IMG_5597_VSCO.jpeg' | relative_url }}" alt="Image 3">
 <img src="{{ 'assets/images/post1/IMG_5607_VSCO.jpeg' | relative_url }}" alt="Image 4">
 </div>
-<br>
 <p>I stopped in to see the little Isami Noguchi feature they have on at M+. A beautiful space, a not very crowded haven in Hong Kong for looking at exhibitions, and even taking a few photos without people in them.</p>
 <br>

@@ -104,7 +104,8 @@
     gap: 10px; /* Space between images */
     max-width: 1200px; /* Adjust this to control the total width */
     margin: left; /* Center the grid */
-    padding-bottom: 0px;
+    margin: 0;  /* Center the grid */
+    padding: 0; /* Adjust padding to remove space */
 }
 
 .image-grid img {
