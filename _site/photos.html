@@ -55,20 +55,20 @@
   </div>
 
   <div class="photo-gallery">
-    <a href="/assets/images/post2/IMG_5673_VSCO.jpeg">
-      <img src="/assets/images/post2/IMG_5673_VSCO.jpeg" alt="Image 1">
+    <a href="/assets/images/post2/IMG_5673_VSCO.jpeg" onclick="openModal(event, this)">
+      <img src="/assets/images/post2/IMG_5673_VSCO.jpeg" alt="Image 1" class="image">
     </a>
     <a href="/assets/images/post2/IMG_2659_VSCO.jpeg">
-      <img src="/assets/images/post2/IMG_2659_VSCO.jpeg" alt="Image 2">
+      <img src="/assets/images/post2/IMG_2659_VSCO.jpeg" alt="Image 2" class="image" onclick="openModal(this)">
     </a>
     <a href="/assets/images/mainpage/IMG_2578_VSCO.jpeg">
-      <img src="/assets/images/mainpage/IMG_2578_VSCO.jpeg" alt="Image 3">
+      <img src="/assets/images/mainpage/IMG_2578_VSCO.jpeg" alt="Image 3"class="image" onclick="openModal(this)">
     </a>
     <a href="/assets/images/post2/7CC5E613-C7C5-4709-A6E9-A8F557492E54.jpeg">
-      <img src="/assets/images/post2/7CC5E613-C7C5-4709-A6E9-A8F557492E54.jpeg" alt="Image 4">
+      <img src="/assets/images/post2/7CC5E613-C7C5-4709-A6E9-A8F557492E54.jpeg" alt="Image 4"class="image" onclick="openModal(this)">
     </a>
     <a href="/assets/images/post2/8B8A3BB1-F24F-49DA-B1A9-00D18CA199AC.jpeg">
-      <img src="/assets/images/post2/8B8A3BB1-F24F-49DA-B1A9-00D18CA199AC.jpeg" alt="Image 5">
+      <img src="/assets/images/post2/8B8A3BB1-F24F-49DA-B1A9-00D18CA199AC.jpeg" alt="Image 5"class="image" onclick="openModal(this)">
     </a>
     <a href="/assets/images/post2/900072EA-DF98-4EC7-9A9D-DFA6CF18DDC8.jpeg">
       <img src="/assets/images/post2/900072EA-DF98-4EC7-9A9D-DFA6CF18DDC8.jpeg" alt="Image 6">
@@ -243,19 +243,20 @@
     </a>
   </div>
 
-<!-- Lightbox Structure -->
-<div id="lightbox" class="lightbox" style="display:none;">
-  <div class="lightbox-content">
-      <span class="lightbox-close" id="lightbox-close">X</span>
-      <img id="lightbox-img" src="" alt="Lightbox Image">
+<!-- Modal Structure -->
+<div id="imageModal" class="modal" style="display:none;">
+  <div class="modal-content">
+    <span class="close" onclick="closeModal()">&times;</span>
+    <img id="modalImg" src="" alt="">
+    <div id="modalText"></div>
   </div>
 </div>
 
 
+<script src="/assets/js/script.js"></script>
 
-<script src="/assets/js/lightbox.js"></script>
-
-
+</body>
+</html>
 </body>  <!-- This will render the content of the page (from index.md, about.html, etc.) -->
     </main>
   </div>
