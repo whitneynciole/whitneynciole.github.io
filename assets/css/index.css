@@ -1,28 +1,28 @@
-/* posts.css */
-
-
   /* General body styles */
   body {
     background-color: rgb(244, 234, 219);
-    font-family: Arial, sans-serif;
+    font-family: sans-serif; 
   }
   
   /* Heading styles */
   h1 {
     color: rgb(76, 51, 31);
     text-align: left;
-    font-size: 25px; 
+    font-size: 80px; 
     font-weight: normal;
+    font-family: 'SuperBrave'
   }
+
   h3{
     color: rgb(76, 51, 31);
   }
+
   /* Paragraph styles */
   p {
-    font-family: verdana, sans-serif;
-    font-size: 10px;
+    font-size: 15px;
     text-align: left;
-    color: rgb(27, 20, 14);
+    color: rgb(76, 51, 31);
+    font-family: sans-serif; 
   }
   
   /* Positioning the container in the top right corner */
@@ -99,9 +99,9 @@
   display: grid;
   grid-template-columns: 1fr; /* Only 1 image per row */
   gap: 0; /* No space between images */
-  width: 15%; /* Takes up 15% of the page width */
+  width: 25%; /* Takes up 15% of the page width */
   position: fixed; /* Fixes the image grid on the right side */
-  top: 0; /* Align to the top of the page */
+  top: 0px; /* Align to the top of the page */
   right: 0; /* Align to the right side of the page */
   padding: 0; /* Remove any internal padding */
   margin: 0; /* Remove any margin */

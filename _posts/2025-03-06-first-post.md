@@ -9,7 +9,7 @@ featured_image: "/assets/images/IMG_5876_VSCO.jpeg"
 
 
 ![coffee cup](/assets/images/IMG_5876_VSCO.jpeg){: style="width: 500px; height: auto;" }
-
+<div class="text-container">
 <h2>recently read: </h2>
 <ul class="small-list">
 <li>Lifeform - 5/5☆ </li>
@@ -34,12 +34,12 @@ featured_image: "/assets/images/IMG_5876_VSCO.jpeg"
 </ul>
 
 <h2>loving lately:</h2>
-
-<div class="image-grid">
-<img src="{{ 'assets/images/post1/06359813-C0DA-474E-BFD1-80C74AC88FDA.jpeg' | relative_url }}" alt="Image 1">
-<img src="{{ 'assets/images/post1/FullSizeRender_VSCO.jpeg' | relative_url }}" alt="Image 2">
-<img src="{{ 'assets/images/post1/IMG_5597_VSCO.jpeg' | relative_url }}" alt="Image 3">
-<img src="{{ 'assets/images/post1/IMG_5607_VSCO.jpeg' | relative_url }}" alt="Image 4">
+<p>I stopped in to see the little Isami Noguchi feature they have on at M+. A beautiful space, a not-very-crowded haven in Hong Kong for looking at exhibitions, and even taking a few photos without people in them.</p>
 </div>
-<p>I stopped in to see the little Isami Noguchi feature they have on at M+. A beautiful space, a not very crowded haven in Hong Kong for looking at exhibitions, and even taking a few photos without people in them.</p>
+<div class="grid-image">
+<img src="{{ 'assets/images/post1/06359813-C0DA-474E-BFD1-80C74AC88FDA.jpeg' | relative_url }}" alt="Noguci Lamps Exhibition">
+<img src="{{ 'assets/images/post1/FullSizeRender_VSCO.jpeg' | relative_url }}" alt="Noguci Lamps Exhibition">
+<img src="{{ 'assets/images/post1/IMG_5597_VSCO.jpeg' | relative_url }}" alt="Noguci Lamps Exhibition">
+</div>
 <br>
+

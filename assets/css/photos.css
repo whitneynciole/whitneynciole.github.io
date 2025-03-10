@@ -6,10 +6,11 @@ body {
 
 /* Heading styles */
 h1 {
-    color: black;
+    color: rgb(76, 51, 31);
     text-align: left;
-    font-size: 25px;
+    font-size: 30px; 
     font-weight: normal;
+    font-family:'SuperBrave';
 }
 
 /* Paragraph styles */
@@ -58,6 +59,7 @@ p {
     /* Fill the grid column */
     height: 400px;  /* Increased from 250px to make the images larger */
     object-fit: cover;  /* Crop and fit the images */
+    border-radius: 15px;
 }
 
 @media (max-width: 1200px) {
@@ -67,6 +69,7 @@ p {
 
     .photo-gallery img {
         height: 350px;  /* Increased from 200px */
+        border-radius: 15px;
     }
 }
 
@@ -77,6 +80,7 @@ p {
 
     .photo-gallery img {
         height: 300px;  /* Increased from 180px */
+        border-radius: 15px;
     }
 }
 
@@ -87,6 +91,8 @@ p {
 
     .photo-gallery img {
         height: auto;
+        border-radius: 15px;
+
     }
 }
 
@@ -137,6 +143,23 @@ p {
     align-items: center;
     text-align: right;
 }
+
+.heart-button {
+    position: absolute;
+    bottom: 10px;  /* Position at the bottom */
+    right: 10px;   /* Position at the right */
+    font-size: 15px;  /* Set a reasonable font size for the width */
+    color: #ccc;   /* Default color of heart (light gray) */
+    background: none;
+    border: none;
+    cursor: pointer;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.heart-button.clicked {
+    color: rgb(236, 93, 93); /* Turn red when clicked */
+}
+
 .photo-gallery img:hover {
     opacity: 0.7; /* Make the image slightly faded */
 }

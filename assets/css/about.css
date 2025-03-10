@@ -3,17 +3,18 @@ body {
   }
   
   h1 {
-    color: black;
-    text-align: left;
-    font-size: 25px; 
-    font-weight: normal;
+      color: rgb(76, 51, 31);
+      text-align: left;
+      font-size: 30px; 
+      font-weight: normal;
+      font-family:'SuperBrave';
   }
   
   p {
-    font-family: verdana;
-    font-size: 10px;
-    float: center;
-    
+    font-size: 13px;
+    text-align: left;
+    color: rgb(76, 51, 31);
+    font-family: sans-serif; 
   }
   img {
     float: left;
@@ -40,7 +41,42 @@ body {
     border-radius: 5px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
     font-weight: bold;
+    font-family: sans-serif; 
 }
 .top-right-links a:hover {
     background-color: rgb(249, 239, 230);
+}
+.about-container {
+  display: flex; /* Use Flexbox for layout */
+  gap: 20px; /* Adds some space between the photo and text */
+  flex-wrap: wrap; /* Ensures responsiveness if the screen is too small */
+}
+
+.photo-container {
+  flex: 0 0 400px; /* Fix the width of the photo container */
+}
+
+.text-container {
+  flex: 1; /* Let the text take up the remaining space */
+}
+
+.list-container {
+  padding: 0; /* Space inside the box */
+  margin-top: 0; /* Adds space above the list box */
+  background-color: rgb(244, 234, 219); /* Background color for the box */
+  max-width: 370px;
+
+}
+
+.small-list {
+  font-size: 13px;
+  line-height:1.0;
+  list-style-position: outside;
+  color: rgb(76, 51, 31);
+  font-family: sans-serif;
+  padding-left: 20px;
+}
+
+.small-list li {
+  margin-bottom: 5px; /* Adds space between list items */
 }

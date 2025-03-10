@@ -1,10 +1,26 @@
 /* Existing styles */
+@font-face {
+    font-family: 'MotenaGolden';
+    src: url('/assets/fonts/MotenaGolden-Reguler.ttf') format('truetype');
+    /* Adjust the path as needed */
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'SuperBrace';
+    src: url('/assets/fonts/SuperBrave.ttf') format('truetype');
+    /* Adjust the path as needed */
+    font-weight: normal;
+    font-style: normal;
+}
+
 header {
-position: sticky;
-background-color:  rgb(244, 234, 219);
-color: rgb(76, 51, 31);
-padding: auto;
-font-size: 15px;
+    position: sticky;
+    background-color: rgb(244, 234, 219);
+    color: rgb(76, 51, 31);
+    padding: auto;
+    font-size: 15px;
 }
 
 body {
@@ -16,18 +32,21 @@ body {
 .content {
     flex: 1;
     padding: 20px;
-  }
+}
+
 h1 {
-    color: black;
+    color: rgb(76, 51, 31);
     text-align: left;
-    font-size: 25px; 
+    font-size: 30px;
     font-weight: normal;
-  }
+    font-family: 'SuperBrave';
+}
 
 p {
     font-family: verdana;
     font-size: 10px;
-    text-align: left; /* changed float: center to text-align: center */
+    text-align: left;
+    /* changed float: center to text-align: center */
 }
 
 img {
@@ -71,6 +90,7 @@ img {
     flex-direction: row;
     gap: 10px;
 }
+
 /* Style for individual links */
 .header-links a {
     text-decoration: none;
@@ -89,7 +109,7 @@ img {
 
 footer {
     background-color: rgb(244, 234, 219);
-    color:rgb(76, 51, 31);
+    color: rgb(76, 51, 31);
     padding: auto;
     font-size: 15px;
-    }
+}

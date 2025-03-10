@@ -3,18 +3,20 @@ body {
   }
   
   h1 {
-    color: black;
+    color: rgb(76, 51, 31);
     text-align: left;
-    font-size: 25px; 
+    font-size: 30px; 
     font-weight: normal;
-  }
+    font-family:'SuperBrave';
+}
   
   p {
     font-family: verdana;
     font-size: 10px;
     text-align: left;
   }
-  fieldset {
+/* Fieldset styling */
+fieldset {
     width: 55vw;  /* Make it scale dynamically with the viewport */
     min-width: 500px;
     max-width: 1000px;
@@ -23,30 +25,47 @@ body {
     min-height: 500px;
     max-height: 955px;
 
-    padding: 5px;
-    border: 3px solid rgb(76, 51, 31);
-    border-radius: 10px;
+    padding: 0px;
+    border: 2px solid rgb(76, 51, 31);
+    border-radius: 0px;
     background-color: rgb(244, 234, 219);
     justify-content: center; /* Center the grid */
     align-items: center;
-    scrollbar-color: rgb(76, 51, 31);
     display: block; /* Remove flex centering */
-    overflow: auto; /* Ensure scrolling works properly */
-    overflow-y: scroll;
-
+    overflow: hidden; /* Hide the default scrollbar */
 }
+
+/* Custom Scrollbar styling for Webkit-based browsers (Chrome, Safari, etc.) */
 fieldset::-webkit-scrollbar {
-    width: 10px; /* Adjust width */
+    width: 2px; /* Set width of the scrollbar */
 }
 
 fieldset::-webkit-scrollbar-thumb {
-    background-color: rgb(244, 234, 219); /* Scrollbar color */
-    border-radius: 5px;
+    background-color: rgb(76, 51, 31); /* Thumb color */
+    border-radius: 5px; /* Rounded corners */
 }
 
 fieldset::-webkit-scrollbar-track {
     background-color: rgb(244, 234, 219); /* Track color */
 }
+
+/* Firefox scrollbar styling */
+fieldset {
+    scrollbar-width: thin; /* Thin scrollbar */
+    scrollbar-color: rgb(76, 51, 31) rgb(244, 234, 219); /* Thumb and track colors */
+}
+
+/* Hide the default scrollbar for IE and Edge */
+fieldset {
+    -ms-overflow-style: none; /* Internet Explorer / Edge */
+}
+
+/* Force scrolling to appear with your custom scrollbar */
+fieldset {
+    overflow: auto; /* Add scrolling to ensure content scrolls */
+}
+
+
 
 .gr_grid_container {
     width: 100%; /* Match fieldset width */
@@ -55,7 +74,6 @@ fieldset::-webkit-scrollbar-track {
     flex-wrap: wrap; /* Allow books to wrap inside */
     justify-content: flex-start; /* Center books inside */
     align-items: flex-start;
-    overflow: auto; /* Add scrolling if needed */
     
 }
 
@@ -63,7 +81,11 @@ fieldset::-webkit-scrollbar-track {
     width: 98px; /* Keep book cover size */
     height: 160px;
     padding: 3px;
-}
+    display: flex;
+    justify-content: center; /* Centers the content horizontally within the container */
+    align-items: center; /* Centers the content vertically within the container */
+    }
+
 
 
   /* Position the container in the top right corner */
@@ -87,6 +109,7 @@ fieldset::-webkit-scrollbar-track {
     border-radius: 5px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
     font-weight: bold;
+    font-family: sans-serif; 
 }
 .top-right-links a:hover {
     background-color: rgb(249, 239, 230);

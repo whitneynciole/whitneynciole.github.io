@@ -3,17 +3,30 @@
 
   /* General body styles */
   body {
-    background-color: rgb(244, 234, 219);
-    font-family: Arial, sans-serif;
+    
+    background-color: rgb(244, 234, 219); 
+    background-image: linear-gradient(to right, #ccc 1px, transparent 1px),
+                      linear-gradient(to bottom, #ccc 1px, transparent 1px);
+    background-size: 25px 25px; /* Set the size of the grid squares */
+    font-family: 'Courier New', Courier, monospace; /* Optional: mimic a notebook font */
   }
   
   /* Heading styles */
   h1 {
     color: rgb(76, 51, 31);
     text-align: left;
-    font-size: 25px; 
+    font-size: 40px; 
     font-weight: normal;
+    font-family: SuperBrave;
+    padding: 0px;
+    
   }
+ .date {
+    font-family: 'Courier New', sans-serif;
+    font-size: 14px;
+    color: rgb(76, 51, 31);
+    padding: 0px;
+}
   /* Heading styles */
   h2 {
     color: black;
@@ -24,8 +37,8 @@
   
   /* Paragraph styles */
   p {
-    font-family: verdana, sans-serif;
-    font-size: 13px;
+    font-family: 'Courier New';
+    font-size: 14px;
     text-align: left;
     max-width: 600px;
   }
@@ -51,6 +64,7 @@
     border-radius: 5px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
     font-weight: bold;
+    font-family: sans-serif; 
   }
   
   .top-right-links a:hover {
@@ -114,6 +128,21 @@
     object-fit: cover; /* Crop images if needed */
 }
 
+.grid-image{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* 2 images per row */
+  gap: 10px; /* Space between images */
+  max-width: 800px; /* Adjust this to control the total width */
+  margin: left; /* Center the grid */
+  margin: 0;  /* Center the grid */
+  padding: 0; /* Adjust padding to remove space */
+}
+.grid-image img{
+  width: 100%; /* Make images fill their grid cells */
+  height: 50%; /* Maintain aspect ratio */
+  object-fit: cover; /* Crop images if needed */
+}
+
 .small-list {
   font-size: 14px; /* Makes the list smaller */
   line-height: 1.2; /* Adjusts the space between lines */
@@ -125,3 +154,13 @@ blockquote {
   font-style: italic;
   text-align: left;
 }
+.text-container {
+    flex: 1; /* Let the text take up the remaining space */
+    background-color: rgba(244, 234, 219, 0.6); /* Add some transparency to the background */
+    max-width: 580px;
+    padding-top: 0px;
+   
+    /* Optional: Add some border radius or box-shadow for a softer look */
+    border-radius: 10px;
+}
+  
