@@ -1,4 +1,5 @@
-* General body styles */ body {
+/* General body styles */ 
+body {
     background-color: rgb(244, 234, 219);
     font-family: Arial, sans-serif;
 }
@@ -45,67 +46,70 @@ p {
     background-color: rgb(249, 239, 230);
 }
 
+
 .photo-gallery {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-    /* Auto-sizing */
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* Increased minimum width per column */
     gap: 10px;
 }
 
 .photo-gallery img {
     width: 100%;
     /* Fill the grid column */
-    height: 250px;
-    /* Adjust this to a fixed height */
-    object-fit: cover;
-    /* Crop and fit the images */
+    height: 400px;  /* Increased from 250px to make the images larger */
+    object-fit: cover;  /* Crop and fit the images */
 }
 
 @media (max-width: 1200px) {
     .photo-gallery {
-        column-count: 3;
+        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));  /* Smaller minimum column size for medium screens */
     }
 
     .photo-gallery img {
-        height: 200px;
+        height: 350px;  /* Increased from 200px */
     }
 }
 
 @media (max-width: 800px) {
     .photo-gallery {
-        column-count: 2;
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));  /* Smaller columns for smaller screens */
     }
 
     .photo-gallery img {
-        height: 180px;
+        height: 300px;  /* Increased from 180px */
     }
 }
 
 @media (max-width: 500px) {
     .photo-gallery {
-        column-count: 1;
+        grid-template-columns: 1fr;  /* Only one photo per row */
     }
 
     .photo-gallery img {
         height: auto;
     }
 }
+
 /* Modal styles */
 .modal {
     display: none; /* Hidden by default */
-    position: fixed;
-    z-index: 1;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.7);
+    position: fixed; /* Stays in place */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Centers it */
+    width: auto;
+    max-width: 80vw; /* Ensures it doesn't get too wide */
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    z-index: 1000;
 }
 
 .modal-content {
     max-width: 600px; /* Shrinks the entire modal */
-    padding: 20px;
-    background: white;
+    padding: 10px;
+    background: #fff;
     display: flex; /* Layout fix */
     align-items: center; /* Centers content */
 }
@@ -116,13 +120,13 @@ p {
     width: 100%;
 }
 
-.modal-image {
-    max-width: 300px;  /* Shrink image */
-    max-height: 300px; /* Shrink image */
-    width: auto;  /* Maintain aspect ratio */
-    height: auto;
-    display: block; /* Remove extra space */
-    margin: auto; /* Center the image */
+.modal img {
+    max-width: 50%; /* Ensures the image is never larger than the modal */
+    height: auto; /* Keeps the aspect ratio */
+    display: block; /* Removes extra space below the image */
+    margin-left: 10px; 
+    margin-right: auto;
+    transition: filter 0.3s ease; /* Smooth transition */
 }
 
 .modal-description {
@@ -131,7 +135,10 @@ p {
     display: flex;
     justify-content: center;
     align-items: center;
-    text-align: center;
+    text-align: right;
+}
+.photo-gallery img:hover {
+    opacity: 0.7; /* Make the image slightly faded */
 }
 
 .close {
