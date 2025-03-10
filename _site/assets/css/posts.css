@@ -117,8 +117,8 @@
     grid-template-columns: repeat(2, 1fr); /* 2 images per row */
     grid-template-rows: repeat(3, auto); /* 3 rows */
     gap: 10px; /* Space between images */
-    max-width: 1200px; /* Adjust this to control the total width */
-    margin: 0 auto; /* Center the grid horizontally */
+    max-width: 800px; /* Adjust this to control the total width */
+    margin: 0 left; /* Center the grid horizontally */
     padding: 0; /* Adjust padding to remove space */
 }
 
