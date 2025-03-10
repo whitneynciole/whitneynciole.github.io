@@ -114,19 +114,20 @@
   }
   .image-grid {
     display: grid;
-    grid-template-columns: repeat(4, 1fr); /* 2 images per row */
+    grid-template-columns: repeat(2, 1fr); /* 2 images per row */
+    grid-template-rows: repeat(3, auto); /* 3 rows */
     gap: 10px; /* Space between images */
     max-width: 1200px; /* Adjust this to control the total width */
-    margin: left; /* Center the grid */
-    margin: 0;  /* Center the grid */
+    margin: 0 auto; /* Center the grid horizontally */
     padding: 0; /* Adjust padding to remove space */
 }
 
 .image-grid img {
     width: 100%; /* Make images fill their grid cells */
-    height: 75%; /* Maintain aspect ratio */
-    object-fit: cover; /* Crop images if needed */
+    height: 100%; /* Make sure images fill their grid cells vertically */
+    object-fit: cover; /* Crop images if needed to fill the cell */
 }
+
 
 .grid-image{
   display: grid;
